@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    background: url('1.1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* Overlay to Reduce Opacity of Background Image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline;
+    position: relative;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    background-color: #747c74;
+}
+
+/* Language Dropdown Styles */
+.language-dropdown {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    display: none; /* Initially hidden */
+}
+
+.language-dropdown li {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.language-dropdown li:hover {
+    background-color: #747c74;
+}
+
+/* Flexbox Layout for Content */
+.content-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px;
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Dashboard Styles for Flexbox Column */
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.flashcard-options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flashcard-options li {
+    display: none;
+    padding: 5px 0;
+}
+
+.flashcard-options li a {
+    text-decoration: none;
+    color: #4caf50;
+}
+
+.flashcards:hover .flashcard-options li {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+}
+.language-label{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.language-toggle{
+    color: #4caf50;
+    text-decoration: none;
+}
+
+/* General Styles for Header */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling for the Logo */
+.logo {
+    height: 80px; /* Adjust the height as needed */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+/* Styling for Title and Subtitle */
+#title {
+    margin: 0;
+}
+
+#subtitle {
+    margin: 0;
+}
+
+/* General Styles for Header */
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Container for header content to align items */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling for the Logo */
+.logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+/* Styling for Header Buttons */
+.header-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+.header-button {
+    background-color: #ffffff;
+    color: #4caf50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #e0e0e0;
+}
